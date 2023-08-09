@@ -1,5 +1,5 @@
 # Challenge Repo Template
-This repository is a template for future CTFs.``
+This repository is a template for future CTFs.
 
 - Remember to create a new branch
 - Copy the format of `chall.yaml` from `example/`
