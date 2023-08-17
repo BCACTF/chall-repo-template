@@ -27,7 +27,7 @@ ARCS uses the information in the `chall.yaml` file to display the challenge's de
 
 - **Type:** List of Strings
 - **Required:** Yes
-- **Description:** The categories that the challenge falls under. Categories MUST be one of the following: `misc`, `binex`, `crypto`, `foren`, `rev`, `webex`.
+- **Description:** The categories that the challenge falls under. Categories MUST be `misc`, `binex`, `crypto`, `foren`, `rev`, `webex`.
 - **Example:** 
     ```yaml
     categories:
@@ -77,7 +77,7 @@ ARCS uses the information in the `chall.yaml` file to display the challenge's de
 - **Example:**
     ```yaml
     description: |
-        This is a challenge about saying hello to the world. This is **very** important, because I put it in bold.
+        This is a challenge about saying hello to the world. This is **very** important because I put it in bold.
 
         And this is a new paragraph!
         
@@ -104,14 +104,14 @@ ARCS uses the information in the `chall.yaml` file to display the challenge's de
         ```yaml
         deploy:
             web: # Name of the container
-                build: . # Directory relative to the root of the challenge directory that contains the Dockerfile.
+                build: . # Directory relative to the challenge directory's root containing the Dockerfile.
                 expose: 1337/tcp # port/<tcp or udp>
         ```
     - netcat Binex Example:
         ```yaml
         deploy:
             nc: # Name of the container
-                build: . # Directory relative to the root of the challenge directory that contains the Dockerfile.
+                build: . # Directory relative to the challenge directory's root containing the Dockerfile.
                 expose: 1337/tcp # port/<tcp or udp>
         ```
 
@@ -129,7 +129,7 @@ ARCS uses the information in the `chall.yaml` file to display the challenge's de
 ### `files`
 - **Type:** List of Paths
 - **Required:** No
-- **Description:** A list of files that will be displayed on the challenge's page to be downloaded. The paths must be relative to the root of the challenge directory. File names can be changed using the `dest` attribute. Note that files from a container can be added here as well, see the example below.
+- **Description:** A list of files that will be displayed on the challenge's page to be downloaded. The paths must be relative to the root of the challenge directory. File names can be changed using the `dest` attribute. Note that files from a container can also be added here; see the example below.
 - **Example:**
     ```yaml
     files:
