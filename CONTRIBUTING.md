@@ -1,7 +1,7 @@
 # Contributing
 
 - Come up with an idea and put it on the Google Sheet. Make sure there isn't already a similar challenge.
-- Create your challenge and a `chall.yaml` file, use the one from the [example chall](/example/chall.yaml) as a guide.
+- Create your challenge and a `chall.yaml` file. See [CHALL_YAML_GUIDE.md](/CHALL_YAML_GUIDE.md) for more information.
 - Make sure to include a solvepath, and/or any scripts you used yourself to make/solve the challenge.
 - Add a `Dockerfile` (if needed). Look at other similar challenges from previous CTFs as a guide. If you need help ask an admin.
 - Create a branch, name it in the format of `category/chall-name`.
