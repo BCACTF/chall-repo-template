@@ -6,9 +6,11 @@ This is a guide on what the `chall.yaml` file is, how to create one, and how the
 
 ### What is a chall.yaml file?
 
-A `chall.yaml` file contains information about a specific challenge. Each challenge is **required** to have a chall.yaml file in the root of the challenge directory.
+A `chall.yaml` file contains information about a specific challenge. Each challenge is **required** to have a `chall.yaml` file in the root of the challenge directory.
 
 ARCS uses the information in the `chall.yaml` file to display the challenge's description, points, author, showing file attachments, etc. on the CTF website. It will also host service challenges (if specified) and will automatically add a link to the challenge's service on the CTF website.
+
+See [the example challenge's chall.yaml file](/example/chall.yaml) for an example of a complete and basic `chall.yaml` file.
 
 ## Fields
 
