@@ -6,7 +6,6 @@ flag: bcactf{this_is_a_flag}
 # Alternatively:
 # flag:
 #   file: ./flag.txt
-# 
 description: |-
   Look at this example problem.
   This is the problem description.
@@ -19,7 +18,7 @@ hints:
   - Have you tried turning it off and on again?
   - Have you tried forcing an unexpected reboot?
 files:
-  - src: ./flag.txt
+  - src: ./secrets.txt
   - src: ./a.txt
     dest: optionallyrenamethefile.txt
 authors:
